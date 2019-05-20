@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:clock="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.example.dongluong.democustomview.CustomClock
+        android:layout_width="match_parent"
+        clock:color_strock="@color/colorPrimaryDark"
+        clock:width_strock_circle="20dp"
+        clock:x_title="120dp"
+        clock:y_title="120dp"
+        clock:text_size_title="24sp"
+        android:layout_height="200dp" />
+
+</android.support.constraint.ConstraintLayout>
