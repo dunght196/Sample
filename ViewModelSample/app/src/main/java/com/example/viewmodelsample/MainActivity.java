@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         CountNumberWithoutViewModelActivity.class));
                 break;
             case R.id.button_share_data:
-//                startActivity(new Intent(MainActivity.this,
-//                        ShareDataActivity.class));
+                startActivity(new Intent(MainActivity.this,
+                        ShareDataActivity.class));
                 break;
         }
     }
