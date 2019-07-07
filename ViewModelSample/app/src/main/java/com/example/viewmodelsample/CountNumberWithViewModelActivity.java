@@ -6,8 +6,10 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CountNumberWithViewModelActivity extends AppCompatActivity implements LifecycleOwner, View.OnClickListener {
 
@@ -79,5 +81,11 @@ public class CountNumberWithViewModelActivity extends AppCompatActivity implemen
                 mViewModel.increaseScoreTeamB(3);
                 break;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d("dz","onDestroy");
+        super.onDestroy();
     }
 }
